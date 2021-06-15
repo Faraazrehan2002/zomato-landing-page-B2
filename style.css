@@ -36,6 +36,7 @@ body{
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
+    margin-bottom: 40px;
 }
 
 .navbar__brand{
@@ -68,6 +69,15 @@ body{
 
 .hero__image__container{
     width:100%;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.bg1, .bg2{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -3;
 }
 
 .hero__image{
@@ -224,6 +234,7 @@ body{
     .navbar{
         justify-content: space-between;
         padding: 2px 30px;
+        margin-bottom: 40px;
     }
     
     .hero__container{
@@ -231,6 +242,10 @@ body{
         display: flex;
         flex-direction: row-reverse;  /* It says we need a row but in reverse direction*/
         align-items: center;
+    }
+
+    .bg1, .bg2{
+        top:-29px;
     }
 
     .explore__menu__lists{
